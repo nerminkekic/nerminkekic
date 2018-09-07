@@ -1,4 +1,12 @@
 /* Main style sheet for Nermin Kekic Blog */
+.container {
+    display: block;
+}
+
 main {
     display: block;
+}
+
+img {
+    background-image: url('../img/Nermink.JPG')
 }
