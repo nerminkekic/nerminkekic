@@ -1,7 +1,4 @@
 /* Main style sheet for Nermin Kekic Blog */
-.container {
-    display: block;
-}
 
 main {
     display: block;
@@ -10,3 +7,15 @@ main {
 img {
     background-image: url('../img/Nermink.JPG')
 }
+
+/* Image classes */
+.jumbotron {
+    height: 500px;
+}
+
+.jumbo-image {
+    background-image: url("/img/Nermink.JPG");
+    background-size: cover;
+}
+
+/* Bootstrap Class modifications */
