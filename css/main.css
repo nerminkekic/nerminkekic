@@ -1,11 +1,20 @@
 /* Main style sheet for Nermin Kekic Blog */
 
-main {
-    display: block;
+
+/* Navigation */
+.navbar {
+    padding-left: 50px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
 }
 
-img {
-    background-image: url('../img/Nermink.JPG')
+.bg-dark {
+    background-color: transparent;
+}
+
+.navbar-dark {
+    background-color: transparent;
 }
 
 /* Image classes */
