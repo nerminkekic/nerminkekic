@@ -9,13 +9,11 @@
 
 }
 
-.bg-dark {
-    background-color: transparent;
+
+.bg-transparant {
+    background-color: rgba(52, 58, 64, 0.61);
 }
 
-.navbar-dark {
-    background-color: transparent;
-}
 
 /* Image classes */
 .jumbotron {
