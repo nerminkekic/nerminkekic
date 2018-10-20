@@ -1,5 +1,8 @@
 /* Main style sheet for Nermin Kekic Blog */
-
+body {
+    padding: 0;
+    margin: 0;
+}
 
 /* Navigation */
 .navbar {
@@ -15,14 +18,22 @@
 }
 
 
-/* Image classes */
-.jumbotron {
-    height: 500px;
-}
 
-.jumbo-image {
-    background-image: url("/img/Nermink.JPG");
+
+.big-banner {
+    background-image: url('../img/Nermink.JPG');
     background-size: cover;
+
+
 }
 
 /* Bootstrap Class modifications */
+
+/* Media query */
+
+
+@media (min-width: 700px) {
+    .jumbotron {
+        height: 550px;
+    }
+}
