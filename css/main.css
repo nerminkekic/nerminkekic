@@ -1,22 +1,9 @@
 /* Main style sheet for Nermin Kekic Blog */
-body {
-    padding: 0;
-    margin: 0;
-}
 
 /* Navigation */
-.navbar {
-    padding-left: 50px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-
-}
-
-
 .bg-transparant {
     background-color: rgba(52, 58, 64, 0.61);
 }
-
 
 
 
@@ -31,8 +18,6 @@ body {
 
 
 /* Media query */
-
-
 @media (min-width: 700px) {
     .jumbotron {
         height: 550px;
