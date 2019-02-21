@@ -1,5 +1,7 @@
 /* Main style sheet for Nermin Kekic Blog */
-
+body {
+  background-color: #fff;
+}
 /* Navigation */
 .navbar {
   border-bottom: 1px solid grey;
@@ -9,16 +11,21 @@
   background-color: #fff;
 }
 
-.nav-brand {
-}
-/* Body  */
-body {
-  background-color: #fff;
+.navbar-brand {
+  margin-right: 100px;
 }
 
+/* Set up background color when mouse is over the nav item */
+.nav-item a:hover {
+  background-color: gray;
+}
 /* Blog Post  */
 
 .container {
+}
+
+.main-blog-section {
+  margin-top: 100px;
 }
 
 /* Media query */
