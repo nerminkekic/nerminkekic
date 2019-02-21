@@ -1,51 +1,26 @@
 /* Main style sheet for Nermin Kekic Blog */
 
-
 /* Navigation */
 .navbar {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 2000;
-    border: dashed green;
+  border-bottom: 1px solid grey;
 }
 
-.bg-transparant {
-    background-color: rgba(52, 58, 64, 0.61);
+.nav-bg-color {
+  background-color: #fff;
 }
 
-
-
-.big-banner {
-    background-image: url('../img/Nermink.JPG');
-    background-size: cover;
-
-
+.nav-brand {
 }
-
-
-
-/* Jumbotron */
-.main-banner {
-
-    width: 100%;
-    border: dashed yellow;
+/* Body  */
+body {
+  background-color: #fff;
 }
-
-.jumbotron {}
 
 /* Blog Post  */
 
 .container {
-
-    border: dashed red;
-    margin-top: 50px;
-
 }
 
 /* Media query */
 @media (min-width: 700px) {
-    .jumbotron {
-        height: 550px;
-    }
 }
