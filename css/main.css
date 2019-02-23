@@ -7,6 +7,10 @@ body {
   border-bottom: 1px solid grey;
 }
 
+.nav-content {
+  margin-left: 20%;
+  margin-right: 20%;
+}
 .nav-bg-color {
   background-color: #fff;
 }
@@ -26,6 +30,7 @@ body {
 
 .main-blog-section {
   margin-top: 100px;
+  /* width: 50%; */
 }
 
 /* Media query */
