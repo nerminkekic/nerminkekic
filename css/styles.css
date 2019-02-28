@@ -6,52 +6,58 @@
 
 /* Nav style starts here */
 nav {
-  display: flex;
-  justify-content: space-around;
+  display: block;
   align-items: center;
-  min-height: 8vh;
   background-color: #fff;
   font-family: "Poppins", sans-serif;
   border-bottom: 1px rgb(180, 180, 182) solid;
-  height: 70px;
+  height: 20vh;
 }
 
 .nav-container {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  flex-basis: 70%;
+  font-size: 3rem;
 }
-
 .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-basis: 50%;
   color: rgb(105, 101, 101);
-  text-transform: uppercase;
-  letter-spacing: 5px;
-  font-size: 22px;
+  padding-left: 2rem;
+  padding-top: 1rem;
 }
-
 .nav-links {
   display: flex;
-  justify-content: space-between;
-  width: 30%;
-}
-.nav-links li {
-  list-style: none;
-}
-.nav-links a {
-  color: rgb(105, 101, 101);
-  text-decoration: none;
-  letter-spacing: 3px;
-  font-size: 14px;
-  font-weight: bold;
+  justify-content: space-around;
+  flex-basis: 100%;
+  order: 3;
+  margin-top: 1rem;
 }
 
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(105, 101, 101);
+}
 .nav-social-media {
   display: flex;
-  justify-content: space-between;
-  flex-basis: 5%;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: 50%;
 }
 
-/* Mobile style starts here */
-@media (width: 769px) {
+.twitter-icon {
+  margin-right: 2rem;
+  padding-top: 1rem;
+}
+.github-icon {
+  margin-right: 2rem;
+  padding-top: 1rem;
 }
