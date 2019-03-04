@@ -5,7 +5,140 @@
 }
 
 /* Nav style starts here */
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
 nav {
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
+  border-bottom: .05rem solid rgb(105, 101, 101);
+  color: rgb(105, 101, 101);
+  
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center; 
+  font-family: 'Ubuntu', sans-serif;
+  margin-top: .5rem;
+  margin-bottom: 1.8rem;
+  
+}
+
+.logo {
+  display: flex;
+  flex-basis: 50%;
+  padding-left: 1rem;
+  font-weight: 700;
+
+}
+
+.logo a { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(105, 101, 101);
+  font-size: 1rem;
+}
+
+
+
+.logo i {
+  margin-right: .6rem;
+  font-size: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: 70%;
+  order: 3;
+  margin-top: 2rem;
+  
+
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(105, 101, 101);
+}
+
+.nav-social-media {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.twitter-icon {
+  margin-right: 1.5rem;
+}
+.github-icon {
+  margin-right: 1rem;
+}
+/* Navbar styles end here */
+
+/* Blog Content syles start here */
+
+.blog-header {
+  margin-top: 2rem;
+  margin-bottom: .4rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+}
+
+.sub-header {
+  margin: 1rem 0;
+}
+.date-author {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.blog-post {
+  margin: 0 1rem;
+  color: rgb(105, 101, 101);
+}
+
+/*Footer styles start here */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  color: rgb(105, 101, 101);
+  background-color: 
+}
+
+.footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 
+.logo, .nav-social-media {
+  border: .1rem solid green;
+}
+
+.nav-links {
+  border: .1rem solid red;
+} */
+
+
+
+
+
+
+
+s/* nav {
   display: block;
   align-items: center;
   background-color: #fff;
@@ -33,9 +166,9 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
-  flex-basis: 100%;
+  flex-basis: 70%;
   order: 3;
-  margin-top: 1rem;
+  margin-top: 5rem;
 }
 
 .nav-links li {
@@ -53,11 +186,12 @@ nav {
   flex-basis: 50%;
 }
 
-.twitter-icon {
-  margin-right: 2rem;
-  padding-top: 1rem;
-}
+.twitter-icon,
 .github-icon {
   margin-right: 2rem;
   padding-top: 1rem;
 }
+
+.nav-links {
+  border: 0.2rem solid green;
+} */
