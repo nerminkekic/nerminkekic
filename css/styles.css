@@ -6,25 +6,24 @@
 
 /* Nav style starts here */
 body {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 nav {
   display: block;
-  font-family: 'Ubuntu', sans-serif;
-  border-bottom: .05rem solid rgb(105, 101, 101);
+  font-family: "Ubuntu", sans-serif;
+  border-bottom: 0.05rem solid rgb(105, 101, 101);
   color: rgb(105, 101, 101);
-  
+  height: 8rem;
+  width: 100%;
 }
 
 .nav-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center; 
-  font-family: 'Ubuntu', sans-serif;
-  margin-top: .5rem;
-  margin-bottom: 1.8rem;
-  
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  padding-top: 1rem;
 }
 
 .logo {
@@ -32,10 +31,9 @@ nav {
   flex-basis: 50%;
   padding-left: 1rem;
   font-weight: 700;
-
 }
 
-.logo a { 
+.logo a {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,10 +42,8 @@ nav {
   font-size: 1rem;
 }
 
-
-
 .logo i {
-  margin-right: .6rem;
+  margin-right: 0.6rem;
   font-size: 2rem;
 }
 
@@ -57,9 +53,7 @@ nav {
   align-items: center;
   flex-basis: 70%;
   order: 3;
-  margin-top: 2rem;
-  
-
+  padding-top: 2rem;
 }
 
 .nav-links li {
@@ -86,10 +80,12 @@ nav {
 /* Navbar styles end here */
 
 /* Blog Content syles start here */
-
+.blog-content {
+  min-height: calc(100vh - 11rem);
+}
 .blog-header {
   margin-top: 2rem;
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
   margin-left: 1rem;
   margin-right: 1rem;
   text-align: center;
@@ -98,9 +94,12 @@ nav {
 .sub-header {
   margin: 1rem 0;
 }
-.date-author {
+.date {
+  margin-left: 1rem;
   margin-bottom: 2rem;
   text-align: center;
+  color: rgb(105, 101, 101);
+  margin-top: 0.5rem;
 }
 
 .blog-post {
@@ -115,83 +114,84 @@ nav {
   align-items: center;
   margin: 2rem 0;
   color: rgb(105, 101, 101);
-  background-color: 
+  height: 3rem;
 }
 
-.footer p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* Styles for Ipad size devices in portrait mode start here */
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  .nav-links {
+    flex-basis: 40%;
+    padding-top: 1.8rem;
+  }
+
+  .blog-header {
+    text-align: left;
+  }
+
+  .date {
+    text-align: left;
+  }
 }
-/* 
-.logo, .nav-social-media {
-  border: .1rem solid green;
-}
+/* Styles for Ipad size devices in landscape mode start here*/
+@media screen and (min-width: 1024px) and (orientation: landscape) {
+  nav {
+    height: 5rem;
+  }
+  .nav-container {
+    flex-wrap: nowrap;
+    margin: 0 5rem;
+    padding-top: 1.4rem;
+  }
+  .logo {
+    flex-basis: 35%;
+    padding: 0 0;
+    margin: 0 1rem;
+  }
+  .nav-links {
+    flex-basis: 30%;
+    order: 0;
+    padding: 0 0;
+    margin: 0 0;
+  }
 
-.nav-links {
-  border: .1rem solid red;
-} */
+  .nav-social-media {
+    flex-basis: 35%;
+  }
 
+  .blog-content {
+    margin: 0 5rem;
+    min-height: calc(100vh - 8rem);
+  }
 
+  .blog-header {
+    text-align: left;
+  }
 
-
-
-
-
-s/* nav {
-  display: block;
-  align-items: center;
-  background-color: #fff;
-  font-family: "Poppins", sans-serif;
-  border-bottom: 1px rgb(180, 180, 182) solid;
-  height: 20vh;
-}
-
-.nav-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  font-size: 3rem;
-}
-.logo {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-basis: 50%;
-  color: rgb(105, 101, 101);
-  padding-left: 2rem;
-  padding-top: 1rem;
-}
-.nav-links {
-  display: flex;
-  justify-content: space-around;
-  flex-basis: 70%;
-  order: 3;
-  margin-top: 5rem;
-}
-
-.nav-links li {
-  list-style-type: none;
-}
-
-.nav-links li a {
-  text-decoration: none;
-  color: rgb(105, 101, 101);
-}
-.nav-social-media {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-basis: 50%;
+  .date {
+    text-align: left;
+  }
 }
 
-.twitter-icon,
-.github-icon {
-  margin-right: 2rem;
-  padding-top: 1rem;
+/* Styles for IPad Pro size in portrait mode start here */
+/* Portrait */
+@media screen and (min-width: 1024px) and (orientation: portrait) {
+  .nav-container {
+    margin: 0 5rem;
+  }
+
+  .blog-content {
+    margin: 0 5rem;
+  }
 }
 
-.nav-links {
-  border: 0.2rem solid green;
-} */
+/* Landscape */
+@media screen and (min-width: 1366px) and (orientation: landscape) {
+  .nav-container {
+    margin: 0 10rem;
+  }
+
+  .blog-content {
+    margin: 0 10rem;
+  }
+}
