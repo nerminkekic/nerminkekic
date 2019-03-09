@@ -125,10 +125,7 @@ nav {
     padding-top: 1.8rem;
   }
 
-  .blog-header {
-    text-align: left;
-  }
-
+  .blog-header,
   .date {
     text-align: left;
   }
@@ -137,6 +134,7 @@ nav {
 @media screen and (min-width: 1024px) and (orientation: landscape) {
   nav {
     height: 5rem;
+    font-size: 1.1rem;
   }
   .nav-container {
     flex-wrap: nowrap;
@@ -144,19 +142,25 @@ nav {
     padding-top: 1.4rem;
   }
   .logo {
-    flex-basis: 35%;
+    flex-basis: 30%;
     padding: 0 0;
-    margin: 0 1rem;
+    margin-left: 1rem;
+  }
+
+  .logo a {
+    font-size: 1.1rem;
   }
   .nav-links {
-    flex-basis: 30%;
+    flex-basis: 40%;
+    justify-content: space-around;
     order: 0;
     padding: 0 0;
     margin: 0 0;
   }
 
   .nav-social-media {
-    flex-basis: 35%;
+    flex-basis: 30%;
+    margin-right: 1rem;
   }
 
   .blog-content {
@@ -164,10 +168,7 @@ nav {
     min-height: calc(100vh - 8rem);
   }
 
-  .blog-header {
-    text-align: left;
-  }
-
+  .blog-header,
   .date {
     text-align: left;
   }
@@ -176,22 +177,58 @@ nav {
 /* Styles for IPad Pro size in portrait mode start here */
 /* Portrait */
 @media screen and (min-width: 1024px) and (orientation: portrait) {
+  nav {
+    height: 5rem;
+    font-size: 1.2rem;
+  }
   .nav-container {
+    flex-wrap: nowrap;
     margin: 0 5rem;
+    padding-top: 1.4rem;
+  }
+  .logo {
+    flex-basis: 30%;
+    padding: 0 0;
+    margin-left: 1rem;
+  }
+
+  .logo a {
+    font-size: 1.2rem;
+  }
+  .nav-links {
+    flex-basis: 40%;
+    justify-content: space-around;
+    order: 0;
+    padding: 0 0;
+    margin: 0 0;
+  }
+
+  .nav-social-media {
+    flex-basis: 30%;
+    margin-right: 1rem;
   }
 
   .blog-content {
     margin: 0 5rem;
+    min-height: calc(100vh - 8rem);
+  }
+  .blog-header,
+  .date {
+    text-align: left;
   }
 }
 
-/* Landscape */
+/* Styles for iPad Pro screen sizes in landscape mode start here*/
 @media screen and (min-width: 1366px) and (orientation: landscape) {
-  .nav-container {
-    margin: 0 10rem;
-  }
-
+  .nav-container,
   .blog-content {
-    margin: 0 10rem;
+    margin: 0 15rem;
+  }
+}
+
+@media screen and (min-width: 1800px) and (orientation: landscape) {
+  .nav-container,
+  .blog-content {
+    margin: 0 32rem;
   }
 }
