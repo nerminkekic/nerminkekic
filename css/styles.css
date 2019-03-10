@@ -116,7 +116,12 @@ nav {
   color: rgb(105, 101, 101);
   height: 3rem;
 }
-
+/* Style for small mobile devices in landscape mode */
+@media screen and (min-width: 568px) and (orientation: landscape) {
+  .nav-links {
+    flex-basis: 50%;
+  }
+}
 /* Styles for Ipad size devices in portrait mode start here */
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
