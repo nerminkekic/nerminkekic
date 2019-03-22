@@ -1,0 +1,24 @@
+/* Styles specific for about page start here */
+.about-bio {
+  min-height: calc(100vh - 11rem);
+}
+h1 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+h2 {
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.about-post {
+  margin: 0 1rem;
+  color: rgb(105, 101, 101);
+  line-height: 2rem;
+  font-size: 1.2rem;
+}
